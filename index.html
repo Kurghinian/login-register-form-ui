@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" 
+    href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login/Register</title>
+</head>
+<body>
+    <!--Container -->
+    <div class="container">
+        <h1 id="log">Login Form</h1>
+        <h1 id="registration" style="display:none;">Register Form</h1>
+        <div class="inputs">
+            <form action="#">
+
+                        <!--Form-->
+                <i class="fa fa-user icon"></i>
+                <input type="text" placeholder="Enter Your Username " required>
+                <br><br><br><i class="fa fa-key icon"></i>  
+                <input type="password" placeholder="Enter Your Password" class="pwd" required>
+                <br> <p style="font-family:cursive;" id="rememberme">Remember Me<input type="checkbox"></p>
+                <i class="fa fa-envelope icon" id="emailicon" style="position: absolute; margin-top: 65px; display:none"></i>
+                <input type="email" placeholder="Enter Your Email Addres" id="reg" required> 
+
+
+
+
+                                        <!--Buttons-->
+                <button type="submit" id="logbtn">Log In</button>                
+                <br>
+                <button type="submit" id="registerbtn" style="display: none;">Register</button>                
+
+            </form>
+            <button onclick="Registr()" id="regfunction">Register</button>
+            
+            <button onclick="Login()" id="logfunction" style="display: none;">Login</button>
+        </div>
+    </div>
+
+<script>
+
+// JavaScript Code
+    function Registr(){ 
+        //in click register btn
+        document.getElementById("reg").style.display = "block"
+        document.getElementById("registration").style.display = "block"
+        document.getElementById("log").style.display = "none"
+        document.getElementById("rememberme").style.display = "none"
+        document.getElementById("logbtn").style.display = "none"
+        document.getElementById("registerbtn").style.display = "block"
+        document.getElementById("regfunction").style.display = "none"
+        document.getElementById("logfunction").style.display = "block"
+        document.getElementById("emailicon").style.display = "block"
+    }
+    function Login(){
+         //in click login btn
+        document.getElementById("reg").style.display = "none"
+        document.getElementById("registration").style.display = "none"
+        document.getElementById("log").style.display = "block"
+        document.getElementById("rememberme").style.display = "flex"
+        document.getElementById("logbtn").style.display = "block"
+        document.getElementById("registerbtn").style.display = "none"
+        document.getElementById("regfunction").style.display = "block"
+        document.getElementById("logfunction").style.display = "none"
+        document.getElementById("emailicon").style.display = "none"
+
+    }
+</script>
+</body>
+</html>

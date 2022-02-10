@@ -1,0 +1,76 @@
+body{
+    background: url("https://images.unsplash.com/photo-1555392660-4f93688b1f21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTR8MTcwODI3Nnx8ZW58MHx8fHw%3D&w=1000&q=80");
+    }
+.inputs{
+    max-width:400px;
+    margin:auto;
+    }
+
+.icon {
+    padding: 10px;
+    width: 60px;
+    margin-top: 15px;
+    }
+      
+.container > h1 {
+    text-align: center;
+    margin-top: 65px;
+    color: rgb(50, 122, 122);
+    font-family: cursive;
+
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+}
+.inputs > form > p {
+    display:flex;
+    color:white;
+    justify-content: right;
+}
+.inputs > form > input{
+    border-radius: 20px;
+    border:none;
+    outline: none;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+}
+.inputs > form > button{
+    float: right;
+    cursor:pointer;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: aqua;
+}
+.inputs > form > button:hover{
+    background-color: black;
+    color: white;
+}
+#reg{
+    display: none;
+}
+.inputs > form > #registers{
+    margin-top: 50px;
+    float: right;
+}
+.inputs > button {
+    margin-top: 280px;
+    margin-right: 70px;
+    background: none;
+    border: none;
+    cursor:pointer;
+    color:burlywood;
+}
+#reg{
+    margin-top: 50px;
+}
+#emailicon{
+    margin-top: 20px;
+}
+.inputs > form>i{  
+    position: absolute;
+    }
